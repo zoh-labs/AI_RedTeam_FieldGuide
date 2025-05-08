@@ -1,6 +1,4 @@
 # LLM endpoint discovery (plugins, APIs, models)
-This guide focuses on discovering exposed LLM endpoints during AI Red Team assessments. 
-This includes plugin enumeration, API exposure, model inference endpoints, and model metadata leaks.
 
 ---
 
