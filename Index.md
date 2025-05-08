@@ -1,3 +1,6 @@
+## AI Red Team Folder Structure
+
+```plaintext
 AI-RedTeam/
 ├── 00_Index.md
 │   └─ Table of contents with tags & references
@@ -91,8 +94,8 @@ AI-RedTeam/
 │   ├─ AI-specific WAFs and monitoring (e.g., LLMProtect)
 │   └─ Tags: #defense #mitigation #hardening
 
-└── 16_References-and-Reading.md
-    ├─ OWASP LLM Top 10
-    ├─ MITRE ATLAS mapping
-    ├─ Real-world case studies
-    └─ Tags: #owasp #mitre #case-study
+├── 16_References-and-Reading.md
+│   ├─ OWASP LLM Top 10
+│   ├─ MITRE ATLAS mapping
+│   ├─ Real-world case studies
+│   └─ Tags: #owasp #mitre #case-study
