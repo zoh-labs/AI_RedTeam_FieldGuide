@@ -233,4 +233,3 @@ Look for payloads like:
 `#enum` `#llm` `#embedding` `#plugin` `#api-discovery` `#model-leakage`
 
 ```
-
