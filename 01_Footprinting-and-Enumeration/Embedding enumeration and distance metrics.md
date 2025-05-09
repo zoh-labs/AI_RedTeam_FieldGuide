@@ -46,7 +46,7 @@ Red teamers can exploit weaknesses in embedding logic to:
 
 ## Tools & Techniques
 
-### 🔬 1. Embedding Fingerprinting (Black Box)
+### 1. Embedding Fingerprinting (Black Box)
 
 Use repeated probing to:
 - Detect **embedding dimensionality** (e.g., 768, 1536)
@@ -239,19 +239,19 @@ Use Case: Fine-tune inputs that stay below or above matching thresholds.
 2. Threshold Abuse
 If a similarity threshold is used for:
 
-Access control (e.g., only allow close matches)
-
-Content filtering (e.g., block hate speech via similarity)
-
-Identity matching (face/voice/text)
-
-Red teamers can:
-
-Tweak phrasing to hover just below detection score
-
-Infer where system “accepts” or “rejects” inputs
-
-Create low-similarity decoys or evasion payloads
+        Access control (e.g., only allow close matches)
+        
+        Content filtering (e.g., block hate speech via similarity)
+        
+        Identity matching (face/voice/text)
+        
+        Red teamers can:
+        
+        Tweak phrasing to hover just below detection score
+        
+        Infer where system “accepts” or “rejects” inputs
+        
+        Create low-similarity decoys or evasion payloads
 
 Example test:
 
@@ -267,52 +267,51 @@ else:
 Attack Strategy: Push variations at 0.76, 0.77, 0.78, 0.79 to find decision boundary.
 
 3. Vector Extraction via Similarity Enumeration
-If a similarity API returns:
-
-A match label
-
-A confidence score
-
-A returned document/snippet
-
-Attackers can:
-
-Craft known embeddings and check for similarity
-
-Infer if a known or sensitive item exists in the database
-
-Approximate the structure of the embedding space
+        If a similarity API returns:
+        
+        A match label
+        
+        A confidence score
+        
+        A returned document/snippet
+        
+        Attackers can:
+        
+        Craft known embeddings and check for similarity
+        
+        Infer if a known or sensitive item exists in the database
+        
+        Approximate the structure of the embedding space
 
 Common endpoints:
 
-bash
-Copy
-Edit
+```
 POST /api/similarity
 POST /embed-search
 GET /vector-query?q="input_text"
+```
+
 Abuse example (API test):
 
-bash
-Copy
-Edit
+```
 curl -X POST https://target.com/api/search \
   -H "Content-Type: application/json" \
   -d '{"query": "islamic terrorist attack"}'
+```
+
 If result shows high similarity with stored vectors, adversaries may:
 
-Confirm presence of dataset records
-
-Confirm presence of sensitive queries in training
-
-Construct shadow vectors
+        Confirm presence of dataset records
+        
+        Confirm presence of sensitive queries in training
+        
+        Construct shadow vectors
 
 4. Creating Embedding Collisions
 Try creating inputs that generate near-identical embeddings to high-value samples. This allows impersonation or result hijacking.
 Example with crafted prompts:
 
-```python
-
+```
 query1 = "Sam Altman is the CEO"
 query2 = "The head of OpenAI is Sam Altman"
 score = util.cos_sim(model.encode(query1), model.encode(query2))
@@ -320,9 +319,8 @@ print(score)
 ```
 
 If collision exceeds matching threshold, attackers can inject these into RAG pipelines or spoof identities.
-
-Commands and Tools
-Python Libraries
+    Commands and Tools
+    Python Libraries
 
 ```
 pip install sentence-transformers sklearn numpy
@@ -351,7 +349,7 @@ Embedding enumeration	Encrypt or hash stored vectors
 Training data inference	Add differential privacy to embedding generation
 Vector-based impersonation	Require multifactor auth or metadata checks
 
-References
+## References
 Probing Similarity Models Paper
 
 Model Extraction Attacks via API
