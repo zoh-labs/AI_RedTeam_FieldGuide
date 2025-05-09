@@ -1,4 +1,4 @@
 # AI RedTeam
 
 ## Search Tags
-`#ai-red-team` `#footprinting` `#enumeration` `#model-leakage #recon`
+`#ai-red-team` `#footprinting` `#enumeration` `#model-leakage #recon`  `#embedding` `#threshold` `#vector-extraction` `#similarity` `#red-teaming` `#ai-attacks` `#dataset-discovery` `#ai-red-teaming` `#open-sources` `#embedded-data` `#model-analysis` `#recon`  `#prompt-injection` `#llm-attacks` `#indirect-prompt` `#jailbreak`
