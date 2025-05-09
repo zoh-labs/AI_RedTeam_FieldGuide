@@ -5,93 +5,93 @@ AI-RedTeam/
 ├── 00_Index.md
 │   └─ Table of contents with tags & references
 
-├── 01_Footprinting-and-Enumeration.md
-│   ├─ LLM endpoint discovery (plugins, APIs, models)
-│   ├─ Model metadata leakage
-│   ├─ Dataset discovery (open and embedded)
-│   ├─ Embedding enumeration and distance metrics
+├── 01_Footprinting-and-Enumeration
+│   ├─ LLM endpoint discovery (plugins, APIs, models).md
+│   ├─ Model metadata leakage.md
+│   ├─ Dataset discovery (open and embedded).md
+│   ├─ Embedding enumeration and distance metrics.md
 │   └─ Tags: #enum #llm #embedding
 
-├── 02_Prompt-Injection.md
-│   ├─ Direct and indirect injection
-│   ├─ Nested injection and prompt chaining
-│   ├─ Role hijacking, few-shot overrides
-│   ├─ HTML/script prompt payloads
+├── 02_Prompt-Injection
+│   ├─ Direct and indirect injection.md
+│   ├─ Nested injection and prompt chaining.md
+│   ├─ Role hijacking, few-shot overrides.md
+│   ├─ HTML/script prompt payloads.md
 │   └─ Tags: #prompt-injection #jailbreak #llm
 
-├── 03_Jailbreaks.md
-│   ├─ DAN, Grandma, Developer Mode, etc.
-│   ├─ Emoji, unicode, punctuation encoding tricks
-│   ├─ Long-token or repetition-based jailbreaks
+├── 03_Jailbreaks
+│   ├─ DAN, Grandma, Developer Mode, etc.md
+│   ├─ Emoji, unicode, punctuation encoding tricks.md
+│   ├─ Long-token or repetition-based jailbreaks.md
 │   └─ Tags: #jailbreak #prompt-injection #llm
 
-├── 04_Model-Evasion.md
-│   ├─ Classifier evasion (adversarial inputs)
-│   ├─ Text/image perturbation techniques
-│   ├─ Autoencoder bypass
+├── 04_Model-Evasion
+│   ├─ Classifier evasion (adversarial inputs).md
+│   ├─ Text/image perturbation techniques.md
+│   ├─ Autoencoder bypass.md
 │   └─ Tags: #evasion #adversarial #ml
 
-├── 05_Model-Inversion.md
-│   ├─ Gradient-based inversion (ML)
-│   ├─ Prompt-based reconstruction (LLM)
+├── 05_Model-Inversion
+│   ├─ Gradient-based inversion (ML).md
+│   ├─ Prompt-based reconstruction (LLM).md
 │   └─ Tags: #inversion #privacy #ml #llm
 
-├── 06_Membership-Inference.md
-│   ├─ White-box and black-box inference
-│   ├─ Shadow models and training attacks
+├── 06_Membership-Inference
+│   ├─ White-box and black-box inference.md
+│   ├─ Shadow models and training attacks.md
 │   └─ Tags: #membership-inference #privacy #ml
 
-├── 07_Data-Poisoning.md
-│   ├─ Label flipping, backdoor triggers
-│   ├─ Pre-training prompt pollution
-│   ├─ Embedding corruption and Trojaning
+├── 07_Data-Poisoning
+│   ├─ Label flipping, backdoor triggers.md
+│   ├─ Pre-training prompt pollution.md
+│   ├─ Embedding corruption and Trojaning.md
 │   └─ Tags: #poisoning #training #supplychain
 
-├── 08_Embedding-Attacks.md
-│   ├─ Insertion in semantic search
-│   ├─ Injection via embeddings
-│   ├─ Manipulation of retrieval results (RAG poisoning)
+├── 08_Embedding-Attacks
+│   ├─ Insertion in semantic search.md
+│   ├─ Injection via embeddings.md
+│   ├─ Manipulation of retrieval results (RAG poisoning).md
 │   └─ Tags: #embedding #rag #vector-db
 
-├── 09_Model-Extraction.md
-│   ├─ Output truncation sampling
-│   ├─ API fingerprinting
-│   ├─ Copycat model training from black-box output
+├── 09_Model-Extraction
+│   ├─ Output truncation sampling.md
+│   ├─ API fingerprinting.md
+│   ├─ Copycat model training from black-box output.md
 │   └─ Tags: #model-extraction #recon #llm
 
-├── 10_Supply-Chain-Attacks.md
-│   ├─ Model weight tampering
-│   ├─ Compromised pip packages or HuggingFace repos
-│   ├─ External plugin abuse (e.g., LangChain, LlamaIndex)
+├── 10_Supply-Chain-Attacks
+│   ├─ Model weight tampering.md
+│   ├─ Compromised pip packages or HuggingFace repos.md
+│   ├─ External plugin abuse (e.g., LangChain, LlamaIndex).md
 │   └─ Tags: #supplychain #plugin #model
 
-├── 11_Logging-and-Detection-Evasion.md
-│   ├─ Token-level evasion
-│   ├─ Stopword obfuscation
-│   ├─ Bypassing filters via encoding
+├── 11_Logging-and-Detection-Evasion
+│   ├─ Token-level evasion.md
+│   ├─ Stopword obfuscation.md
+│   ├─ Bypassing filters via encoding.md
 │   └─ Tags: #evasion #logging #monitoring
 
-├── 12_Agent-Manipulation.md
-│   ├─ LangChain & AutoGPT abuse scenarios
-│   ├─ Instruction leakage and memory manipulation
+├── 12_Agent-Manipulation
+│   ├─ LangChain & AutoGPT abuse scenarios.md
+│   ├─ Instruction leakage and memory manipulation.md
 │   └─ Tags: #agents #autogpt #langchain #memory
 
-├── 13_Attack-Chains.md
-│   ├─ Prompt injection → memory poisoning → exfiltration
-│   ├─ Embedding injection → vector recall → jailbreak
+├── 13_Attack-Chains
+│   ├─ Prompt injection → memory poisoning → exfiltration.md
+│   ├─ Embedding injection → vector recall → jailbreak.md
 │   └─ Tags: #chaining #multi-step #offense
 
-├── 14_Tools.md
-│   ├─ ART (Adversarial Robustness Toolbox)
-│   ├─ TextAttack, CleverHans, LLMGuard
-│   ├─ RedTeaming LLMs (Meta), LLM-Fuzzer, langfuse
+├── 14_Tools
+│   ├─ ART (Adversarial Robustness Toolbox).md
+│   ├─ TextAttack, CleverHans, LLMGuard.md
+│   ├─ RedTeaming LLMs (Meta), LLM-Fuzzer, langfuse.md
 │   └─ Tags: #tools #art #textattack #cleverhans #llmguard
 
-├── 15_Defense-and-Mitigation.md
-│   ├─ Input validation / sanitization
-│   ├─ Prompt hardening & contextual windows
-│   ├─ Output filtering & anomaly detection
-│   ├─ AI-specific WAFs and monitoring (e.g., LLMProtect)
+├── 15_Defense-and-Mitigation
+│   ├─ Input validation / sanitization.md
+│   ├─ Prompt hardening & contextual windows.md
+│   ├─ Output filtering & anomaly detection.md
+│   ├─ AI-specific WAFs and monitoring (e.g., LLMProtect).md
 │   └─ Tags: #defense #mitigation #hardening
 
 ├── 16_References-and-Reading.md
