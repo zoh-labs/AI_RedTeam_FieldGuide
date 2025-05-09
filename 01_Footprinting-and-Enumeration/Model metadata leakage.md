@@ -1,4 +1,3 @@
-```
 # 01_Footprinting-and-Enumeration: Model Metadata Leakage
 > Tags: #ai-red-team #footprinting #enumeration #model-leakage #recon
 
@@ -178,5 +177,4 @@ This file is part of the AI Red Teaming Notes in the directory:
 ---
 
 Let me know if you want a printable version, export to PDF/HTML, or the next topic filled in (e.g., **Membership Inference**, **API Enumeration**, etc.).
-```
 
