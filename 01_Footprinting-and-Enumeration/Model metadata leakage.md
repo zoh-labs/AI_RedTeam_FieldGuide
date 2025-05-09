@@ -48,7 +48,6 @@ Exposed metadata can:
 - **GitHub Dorking**
   ```bash
   site:github.com "model: gpt2" OR "torch.load" OR "config.json"
-````
 
 * **Google Dorks**
 
@@ -166,15 +165,4 @@ curl -X POST https://example.com/api/generate \
 * [OpenAI Usage Policy](https://openai.com/policies/usage-policies)
 * [Model Fingerprinting Techniques](https://arxiv.org/abs/2003.10595)
 
----
-
-## File Location
-
-This file is part of the AI Red Teaming Notes in the directory:
-
-```
-
----
-
-Let me know if you want a printable version, export to PDF/HTML, or the next topic filled in (e.g., **Membership Inference**, **API Enumeration**, etc.).
 
