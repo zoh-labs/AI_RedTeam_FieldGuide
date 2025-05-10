@@ -33,10 +33,10 @@ Used heavily in:
 
 Craft adversarial text inputs to fool NLP models.
 
-#### Techniques:
+#### Adversarial Techniques:
 
 * **Unicode injection / homoglyphs**: Replace characters with lookalikes
-* **Typos / substitutions**: e.g. “b\@dword”
+* **Typos / text substitutions**: e.g. “b\@dword”
 * **Synonym swaps**: Preserve semantics, break classifier
 * **Invisible tokens**: Zero-width spaces, LTR/RTL markers
 * **Prompt obfuscation**: Base64 or hex encoding
@@ -54,12 +54,13 @@ attack = TextFoolerJin2019.build(model_wrapper)
 
 Create images that appear unchanged but are misclassified.
 
-#### Techniques:
+#### Adversarial Techniques:
 
 * **FGSM** (Fast Gradient Sign Method)
 * **PGD** (Projected Gradient Descent)
 * **Patch attacks**: Add visible or invisible patches
 * **Color shifting**: Slight hue tweaks
+* **Rotate image**: 30 degrees, 90 degrees, etc.
 * **JPEG compression artifacts**
 
 ```python
@@ -74,7 +75,7 @@ x_adv = attacker.generate(x_test)
 
 Trick speech or sound classifiers.
 
-#### Techniques:
+#### Adversarial Techniques:
 
 * **Adversarial perturbations**: Add noise below hearing threshold
 * **TTS misuse**: Use synthetic voices with adversarial emphasis
@@ -185,5 +186,6 @@ adv_image = fgsm_attack(image, 0.1, data_grad)
 * [Foolbox](https://github.com/bethgelab/foolbox)
 * [CleverHans](https://github.com/cleverhans-lab/cleverhans)
 * "Explaining and Harnessing Adversarial Examples" – Goodfellow et al. ([https://arxiv.org/abs/1412.6572](https://arxiv.org/abs/1412.6572))
-
+* https://www.youtube.com/watch?v=tTN_BqTv440 
+* https://www.youtube.com/watch?v=TygPgJYKRUI
 ---
