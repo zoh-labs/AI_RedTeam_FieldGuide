@@ -5,9 +5,9 @@
 
 ---
 
-# Common Command-Line Snippets for Adversarial Attacks
+# Command-Line for Adversarial Attacks
 
-This cheatsheet includes CLI or script-style commands for launching adversarial attacks using different frameworks like ART, CleverHans, Foolbox, TextAttack, and PyTorch-based scripts. Each snippet notes the type of attack, when it's useful, and what the command does.
+This cheatsheet includes CLI or script-style commands for launching adversarial attacks using different frameworks like ART, CleverHans, Foolbox, TextAttack, and PyTorch-based scripts.
 
 ---
 
